@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        
+    /* Global Styles
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }  */
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #87C735;
+      color: black;
+    }
+
+    /* Navigation Bar */
+    .navbarr {
+    width: 100%;
+    background-color: #87C735;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbarr-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    max-width: 384px; /* Ensure the width matches your logo */
+    max-height: 100px; /* Ensure the height matches your logo */
+    object-fit: contain; /* Ensures the image scales without stretching */
+}
+
+.navbarr-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarr-links li {
+    margin-left: 30px;
+}
+
+.navbarr-links a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+}
+
+.navbarr-links a:hover {
+    background-color: #87C735;
+    color: black;
+}
+
+.navbarr-right {
+    display: flex;
+    align-items: center;
+}
+
+.phone-link {
+    color: #ECF0F1;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+    color: #87C735;
+}
+
+.get-quote-btn {
+    background-color: #87C735;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-quote-btn:hover {
+    background-color: #87C735;
+}
+
+    /* Header Section */
+    .hero-section {
+      background-color: #87C735;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 30px 20px;
+      height: 50vh;
+      margin-top: 0;
+    }
+
+    .hero-section h2 {
+      font-size: 2.5rem;
+      margin-top: 0;
+    }
+
+    .hero-section p {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 30px;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 50px;
+      background-color: white;
+      margin-top: 80px;
+    }
+
+    /* Contact Details */
+    .contact-details {
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-details h3 {
+      color: #87C735;
+      margin-bottom: 15px;
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .contact-details p span {
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Additional Contact Info */
+    .contact-details ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+
+    .contact-details ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .contact-details ul li img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background-color: #f0f0f0;
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form h3 {
+      color: #87C735;
+      margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #87C735;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: black;
+    }
+
+    /* Image Placeholder */
+    .contact-image {
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-right: 20px;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #87C735;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-details, .contact-form, .contact-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbarr">
+    <div class="navbarr-container">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo-7.svg" width="160" height="50" alt="electrowatt home">
+        </a>
+        <ul class="navbarr-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">About</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="navbarr-right">
+            <a href="#" class="phone-link">+1 (123) 123-4567</a>
+            <a href="quote.html" class="get-quote-btn">Get A Quote</a>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="hero-section">
+    <h2>Get in Touch With Us</h2>
+    <p>We'd love to hear from you! Feel free to reach out with any questions.</p>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <!-- Image Placeholder -->
+    <img src="assets/images/last.jpg" alt="Get in Touch" class="contact-image">
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <h3>Our Contact Details</h3>
+      <p><span>Address:</span> Hyderabad, Telangana, India</p>
+      <p><span>Phone:</span> +123-456-7890</p>
+      <p><span>Email:</span> support@electrowatt.com</p>
+      
+      <ul>
+        <li><ion-icon name="alarm-outline"></ion-icon> Mon-Fri: 9 AM - 5 PM</li>
+        <li><ion-icon name="calendar-number-outline"></ion-icon> Sat-Sun: Closed</li>
+        <li><ion-icon name="call-outline" aria-hidden="true"></ion-icon> +123-456-7890</li>
+        <li><ion-icon name="mail-outline" aria-hidden="true"></ion-icon> support@electrowatt.com</li>
+      </ul>
+
+      <h4>Follow Us:</h4>
+      <ul>
+        <li><ion-icon name="logo-facebook" aria-hidden="true"></ion-icon> Facebook</li>
+        <li><ion-icon name="logo-twitter" aria-hidden="true"></ion-icon> Twitter</li>
+        <li><ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon> LinkedIn</li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- IonIcon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 ElectroWatt. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

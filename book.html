@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Eco-Friendly Ride</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #87C735;
+      color: #fff;
+      background-image: url('assets/images/seamless_bg.jpg'); /* Replace with the seamless image you provided */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #87C735; /* Transparent white for modern look */
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: black;
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 0 40px 0; /* Adjust padding to account for fixed navbar */
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    /* Seamless image styling */
+    .seamless-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    .vehicle-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 40px;
+    }
+
+    .vehicle-card {
+      background-color: #fff;
+      color: #333;
+      border-radius: 15px;
+      width: 280px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .vehicle-card:hover {
+      transform: scale(1.05);
+    }
+
+    .vehicle-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .vehicle-card h2 {
+      font-size: 1.5rem;
+      margin: 15px 0;
+      color: #87C735;
+    }
+
+    .vehicle-card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .vehicle-card ul li {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .confirm-booking {
+      background-color: #333;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+
+    .confirm-booking:hover {
+      background-color: #222;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <header>
+    <h1>Book Your Eco-Friendly Ride</h1>
+    <p>Select the perfect vehicle and confirm your booking</p>
+  </header>
+
+  <!-- Seamless Image -->
+  
+
+  <main>
+    <section class="vehicle-list">
+      <div class="vehicle-card">
+        <img src="assets/images/scooter.jpg" alt="Electric Scooter">
+        <h2>Electric Scooter</h2>
+        <ul>
+          <li>Price: $10/hour</li>
+          <li>Range: 60 km</li>
+          <li>Top Speed: 50 km/h</li>
+        </ul>
+        <button class="confirm-booking">Confirm Booking</button>
+      </div>
+
+      <div class="vehicle-card">
+        <img src="assets/images/car.jpg" alt="Electric Car">
+        <h2>Electric Car</h2>
+        <ul>
+          <li>Price: $25/hour</li>
+          <li>Range: 200 km</li>
+          <li>Top Speed: 120 km/h</li>
+        </ul>
+        <button class="confirm-booking">Confirm Booking</button>
+      </div>
+
+      <div class="vehicle-card">
+        <img src="assets/images/bike.jpg" alt="Electric Bike">
+        <h2>Electric Bike</h2>
+        <ul>
+          <li>Price: $8/hour</li>
+          <li>Range: 40 km</li>
+          <li>Top Speed: 30 km/h</li>
+        </ul>
+        <button class="confirm-booking">Confirm Booking</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ElectroWatt. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

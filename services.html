@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* Global Styles */
+    /* body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    } */
+
+    /* Navigation Bar */
+    /* nav {
+      background-color: #87C735; /* Green background for navbar */
+      /* padding: 15px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    } */
+
+    /* nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      padding: 10px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: black;
+    } */
+    html, body {
+      height: 100%; /* Ensures the body takes up the full height */
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      background-color: #f9f9f9;
+    }
+
+    /* Header Section */
+    .second-header-section {
+      background-color: #87C735; /* Green background */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 80px 20px;
+      margin-top: 50px; /* Offset for fixed navbar */
+    }
+
+    .second-header-section h2 {
+      font-size: 2.5rem;
+    }
+
+    .second-header-section p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Service Grid Layout */
+    .service-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Service Card Styling */
+    .service-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #87C735;
+    }
+
+    .service-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Footer Styling (for completeness) */
+    footer {
+      background-color: #87C735;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .service-grid {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo-7.svg" width="160" height="50" alt="volti home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="services.html" class="navbar-link">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="gallery.html" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="blogs.html" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-action">
+
+        <a href="tel:+12312345678901" class="contact-number">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">+(123) 1234-567-8901</span>
+        </a>
+
+        <a href="quote.html" class="btn btn-primary">
+          <span class="span">Get a quote</span>
+
+          <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+        </a>
+
+      </div>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Header Section (Green Background) -->
+  <header class="second-header-section">
+    <h2>Our Exclusive Services</h2>
+    <p>Explore our eco-friendly transportation solutions tailored to your needs.</p>
+  </header>
+
+  <!-- Services Section -->
+  <main class="service-section">
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="assets/images/vechiles.jpg" alt="Eco-Friendly Vehicle Rentals">
+        <h3>Eco-Friendly Vehicle Rentals</h3>
+        <p>Rent our electric vehicles for a sustainable and affordable ride experience.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/images/chargingport.jpg" alt="Charging Stations">
+        <h3>Charging Stations</h3>
+        <p>Access a wide network of charging stations to power your electric vehicle.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="assets/images/Maintainance.jpg" alt="Vehicle Maintenance">
+        <h3>Vehicle Maintenance</h3>
+        <p>Ensure your vehicle stays in top shape with our comprehensive maintenance services.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section (Optional) -->
+  <footer>
+    <p>© 2024 ElectroWatt. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

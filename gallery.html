@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* Global Styles */
+        /* body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        /* nav {
+            background-color: #6AB547;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e0eec6;
+        } */
+
+        /* Hero Section */
+        .hero-section {
+            height: 50vh;
+            background-color: #87C735;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-section a {
+            background-color: white;
+            color: #6AB547;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .hero-section a:hover {
+            background-color: #4c8821;
+            color: black;
+        }
+
+        /* About Section */
+        .about-section {
+            background-color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #6AB547;
+        }
+
+        .about-section p {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            flex-wrap: wrap;
+        }
+
+        .profile-container .profile-image {
+            max-width: 300px;
+            border-radius: 20px;
+            margin-right: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-container .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-container .profile-content {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .profile-container .profile-content h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .profile-container .profile-content p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #e0f3da;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            color: #6AB547;
+            margin-bottom: 40px;
+        }
+
+        .testimonials .testimonial {
+            max-width: 700px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+
+        .testimonials .testimonial p {
+            font-size: 1.2rem;
+            color: #555;
+            font-style: italic;
+        }
+
+        .testimonials .testimonial span {
+            font-weight: bold;
+            color: #6AB547;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #87C735;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-container .profile-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .profile-container .profile-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-7.svg" width="160" height="50" alt="electrowatt home">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="services.html" class="navbar-link">Services</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="gallery.html" class="navbar-link">About</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="blogs.html" class="navbar-link">Blog</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="contact.html" class="navbar-link">Contact Us</a>
+              </li>
+    
+            </ul>
+          </nav>
+    
+          <div class="header-action">
+    
+            <a href="tel:+12312345678901" class="contact-number">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+    
+              <span class="span">+(123) 1234-567-8901</span>
+            </a>
+    
+            <a href="quote.html" class="btn btn-primary">
+              <span class="span">Get a quote</span>
+    
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+    
+          </div>
+    
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+            <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+          </button>
+    
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Welcome to Our Story</h1>
+        <p>At ElectroWatt, we believe in revolutionizing the future of urban mobility.</p>
+        <a href="#about">Learn More</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About Us</h2>
+        <p>At ElectroWatt, we aim to create a sustainable future by providing eco-friendly transportation solutions. Our electric vehicles and charging networks are designed to make urban mobility greener, cleaner, and more convenient. We strive to be at the forefront of the green revolution by continually innovating to offer better, cleaner options for everyone.</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile-container">
+        <img src="assets/images/profile.jpg" alt="Founder Picture" class="profile-image">
+        <div class="profile-content">
+            <h3>Meet Our Founder</h3>
+            <p>Our founder is passionate about creating a sustainable future. With a vision to offer eco-friendly and accessible transportation solutions, our company was born from the desire to make the world a greener place, one vehicle at a time.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+            <p>"ElectroWatt has revolutionized the way I travel around the city. The electric vehicles are not only environmentally friendly, but they are also super convenient!"</p>
+            <span>- A Happy Customer</span>
+        </div>
+        <div class="testimonial">
+            <p>"I love the green initiative by ElectroWatt. Their sustainable transportation solutions have helped me reduce my carbon footprint significantly!"</p>
+            <span>- Eco-conscious User</span>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 ElectroWatt. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
